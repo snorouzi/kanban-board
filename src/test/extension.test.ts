@@ -10,7 +10,7 @@ suite('Extension behavior', () => {
 	let tasksPath = path.join(root, 'tasks.md');
 
 	function setTempWorkspace(): vscode.Uri {
-		const tmpRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'cursor-kanban-ext-'));
+		const tmpRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'kanban-board-ext-'));
 		const uri = vscode.Uri.file(tmpRoot);
 		const prevLen = vscode.workspace.workspaceFolders?.length ?? 0;
 		vscode.workspace.updateWorkspaceFolders(0, prevLen, { uri });
@@ -26,7 +26,7 @@ suite('Extension behavior', () => {
 
 	test('creates tasks.md with default columns via command', async () => {
 		// trigger creation using the command (new behavior)
-		await vscode.commands.executeCommand('cursor-kanban.openBoard');
+		await vscode.commands.executeCommand('kanban-board.openBoard');
 
 		assert.ok(fs.existsSync(tasksPath));
 		const content = fs.readFileSync(tasksPath, 'utf-8');

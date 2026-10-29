@@ -1,8 +1,8 @@
-# Cursor Kanban
+# Kanban Board
 
 Lightweight Kanban board for Markdown tasks inside VS Code and Cursor.
 
-Cursor Kanban renders a clean, interactive Kanban view powered by a simple Markdown file. Each column is a Markdown heading and each task is a checklist item. Toggle tasks directly from the board and your Markdown stays perfectly in sync.
+Kanban Board renders a clean, interactive Kanban view powered by a simple Markdown file. Each column is a Markdown heading and each task is a checklist item. Toggle tasks directly from the board and your Markdown stays perfectly in sync.
 
 ## Features
 
@@ -51,7 +51,7 @@ You can install the extension in two ways:
 ## Quick start
 
 1. Create a `tasks.md` at the project root (or extension folder) with columns and tasks.
-2. Open the Command Palette and run: "Cursor Kanban: Open Board".
+2. Open the Command Palette and run: "Kanban Board: Open Board".
 3. Drag tasks between columns or between boards. Click a task title to view details and comments. Use the × button to remove a task. Changes are saved back to `tasks.md`.
 
 ## Task file format (tasks.md)
@@ -86,8 +86,8 @@ Notes:
 
 ## Commands
 
-- `cursor-kanban.openBoard` — "Cursor Kanban: Open Board"
-- `cursor-kanban.openBoardFromFile` — "Cursor Kanban: Open Board From File"
+- `kanban-board.openBoard` — "Kanban Board: Open Board"
+- `kanban-board.openBoardFromFile` — "Kanban Board: Open Board From File"
 
 ## Requirements
 
@@ -122,7 +122,7 @@ Local run:
 
 1. `npm install`
 2. Press F5 to launch the Extension Development Host
-3. In the host window, run "Cursor Kanban: Open Board"
+3. In the host window, run "Kanban Board: Open Board"
 
 ## Contributing
 

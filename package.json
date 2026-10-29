@@ -1,12 +1,12 @@
 {
-	"name": "cursor-kanban",
-	"displayName": "cursor-kanban",
+	"name": "kanban-board",
+	"displayName": "kanban-board",
 	"description": "Simple Kanban board for Markdown tasks",
 	"version": "0.3.1",
 	"publisher": "Saeed Norouzi",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/saeedNW/cursor-kanban.git"
+		"url": "https://github.com/saeedNW/kanban-board.git"
 	},
 	"license": "MIT",
 	"engines": {
@@ -16,20 +16,20 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:cursor-kanban.openBoard",
-		"onCommand:cursor-kanban.openBoardFromFile"
+		"onCommand:kanban-board.openBoard",
+		"onCommand:kanban-board.openBoardFromFile"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "cursor-kanban.openBoard",
-				"title": "Cursor Kanban: Open Board",
+				"command": "kanban-board.openBoard",
+				"title": "Kanban Board: Open Board",
 				"category": "Kanban"
 			},
 			{
-				"command": "cursor-kanban.openBoardFromFile",
-				"title": "Cursor Kanban: Open Board From File",
+				"command": "kanban-board.openBoardFromFile",
+				"title": "Kanban Board: Open Board From File",
 				"category": "Kanban"
 			}
 		]

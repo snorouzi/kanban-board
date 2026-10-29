@@ -7,7 +7,7 @@ import { readTasks, Tasks, writeTasks } from '../md-parser';
 
 suite('md-parser', () => {
 	function createTempTasksFile(initialContent: string): string {
-		const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'cursor-kanban-md-'));
+		const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'kanban-board-md-'));
 		const filePath = path.join(tempDir, 'tasks.md');
 		fs.writeFileSync(filePath, initialContent, 'utf-8');
 		return filePath;
@@ -78,7 +78,7 @@ suite('md-parser', () => {
 	});
 
 	test('writeTasks writes expected markdown structure (order and roundtrip)', () => {
-		const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'cursor-kanban-md-'));
+		const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'kanban-board-md-'));
 		const filePath = path.join(tempDir, 'tasks.md');
 
 		const tasks: Tasks = {
@@ -105,7 +105,7 @@ suite('md-parser', () => {
 	});
 
 	test('writeTasks writes multiple comments with [Comments: ...] syntax', () => {
-		const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'cursor-kanban-md-'));
+		const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'kanban-board-md-'));
 		const filePath = path.join(tempDir, 'tasks.md');
 
 		const tasks: Tasks = {

@@ -1,6 +1,6 @@
 # Change Log
 
-All notable changes to the "cursor-kanban" extension will be documented in this file.
+All notable changes to the "kanban-board" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
@@ -60,7 +60,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Theme toggle: Light/Dark theme with persistence via `localStorage`
 - Find in tasks: Built‑in find (Ctrl/Cmd+F) with highlighting and next/prev navigation
 - Keyboard chord: Ctrl/Cmd+G then Ctrl/Cmd+T opens the New Task modal
-- Command to open from any markdown: `cursor-kanban.openBoardFromFile` lets you pick a `.md` file to open as a board
+- Command to open from any markdown: `kanban-board.openBoardFromFile` lets you pick a `.md` file to open as a board
 
 ### Changed
 
@@ -119,8 +119,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ### Added
 
-- Initial release of Cursor Kanban
-- Command: "Cursor Kanban: Open Board" (`cursor-kanban.openBoard`)
+- Initial release of Kanban Board
+- Command: "Kanban Board: Open Board" (`kanban-board.openBoard`)
 - Kanban webview that reads/writes `tasks.md`
 - Parsing of `##` headings as columns
 - Markdown checkboxes (`- [ ]` / `- [x]`) as tasks with toggle support

@@ -7,7 +7,7 @@ import { readTasks } from '../md-parser';
 
 suite('Kanban', () => {
 	function makeInitialFile(): string {
-		const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'cursor-kanban-'));
+		const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'kanban-board-'));
 		const filePath = path.join(tempDir, 'tasks.md');
 		const initial = ['## Todo', '', '## In Progress', '', '## Done', ''].join('\n');
 		fs.writeFileSync(filePath, initial, 'utf-8');

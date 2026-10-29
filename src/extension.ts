@@ -17,7 +17,7 @@ export function activate(context: vscode.ExtensionContext) {
 	const workspaceFolders = vscode.workspace.workspaceFolders;
 
 	// Register command to open the default workspace Kanban board (tasks.md)
-	const openBoardCommand = vscode.commands.registerCommand('cursor-kanban.openBoard', async () => {
+	const openBoardCommand = vscode.commands.registerCommand('kanban-board.openBoard', async () => {
 		if (!workspaceFolders || workspaceFolders.length === 0) {
 			vscode.window.showErrorMessage('Please open a folder to use the Kanban board.');
 			return;
@@ -39,7 +39,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 	// Register command to open a Kanban board from any Markdown file in the current workspace via Quick Pick
 	const openBoardFromFileCommand = vscode.commands.registerCommand(
-		'cursor-kanban.openBoardFromFile',
+		'kanban-board.openBoardFromFile',
 		async () => {
 			if (!workspaceFolders || workspaceFolders.length === 0) {
 				vscode.window.showErrorMessage('Please open a folder to use the Kanban board.');
