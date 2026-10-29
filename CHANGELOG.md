@@ -6,6 +6,12 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ---
 
+## [0.4.0] - 2026-10-29
+
+### Changed
+
+- Renamed extension from `cursor-kanban` to `kanban-board` (package name, display name, command IDs, and identifiers updated).
+
 ## [0.3.1] - 2026-06-19
 
 ### Added
