@@ -6,6 +6,20 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ---
 
+## [0.4.1] - 2026-11-04
+
+### Added
+
+- Extension icon (PNG and SVG) for marketplace listing.
+- README banner images (PNG and SVG).
+
+### Changed
+
+- Repository URL corrected to `github.com/snorouzi/kanban-board`.
+- Updated README with new banner image.
+
+---
+
 ## [0.4.0] - 2026-10-29
 
 ### Changed

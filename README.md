@@ -1,5 +1,7 @@
 # Kanban Board
 
+![Kanban Board — Markdown tasks organized visually inside VS Code](images/readme-banner.png)
+
 Lightweight Kanban board for Markdown tasks inside VS Code and Cursor.
 
 Kanban Board renders a clean, interactive Kanban view powered by a simple Markdown file. Each column is a Markdown heading and each task is a checklist item. Toggle tasks directly from the board and your Markdown stays perfectly in sync.
