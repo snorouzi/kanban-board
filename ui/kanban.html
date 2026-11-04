@@ -488,6 +488,127 @@
 				margin-left: 10px;
 				font-size: 0.75rem;
 			}
+
+			/* Refined board UI */
+			:root {
+				--primary: #635bff;
+				--primary-light: #817bff;
+				--secondary: #526078;
+				--text: #172033;
+				--text-light: #758198;
+				--bg: #f7f8fc;
+				--column-bg: #eef1f7;
+				--task-bg: #ffffff;
+				--done-bg: #f1f3f7;
+				--drag-over: #e7e8ff;
+				--border: #e1e5ee;
+			}
+
+			[data-theme='dark'] {
+				--primary: #9a94ff;
+				--primary-light: #b3afff;
+				--secondary: #aeb8ca;
+				--text: #edf0f7;
+				--text-light: #9ba6ba;
+				--bg: #171a22;
+				--column-bg: #20242e;
+				--task-bg: #292e3a;
+				--done-bg: #242832;
+				--drag-over: #302e50;
+				--border: #343a48;
+			}
+
+			* { box-sizing: border-box; }
+			body { background: var(--bg); letter-spacing: 0.005em; }
+			#board-title {
+				padding: 26px 28px 16px;
+				border: 0;
+				font-size: 1.65rem;
+				font-weight: 700;
+				letter-spacing: -0.035em;
+			}
+			.controls {
+				padding: 0 28px 20px;
+				gap: 9px;
+				align-items: center;
+				border-bottom: 1px solid var(--border);
+			}
+			button {
+				padding: 9px 14px;
+				border-radius: 9px;
+				font-size: 0.84rem;
+				font-family: inherit;
+				transition: transform .16s ease, box-shadow .16s ease, background .16s ease;
+			}
+			button:hover { transform: translateY(-1px); }
+			.btn-primary { background: var(--primary); box-shadow: 0 4px 10px rgba(99,91,255,.2); }
+			.btn-primary:hover { background: var(--primary-light); }
+			.btn-secondary { background: var(--task-bg); border: 1px solid var(--border); }
+			.board {
+				gap: 18px;
+				padding: 24px 28px 28px;
+				align-items: flex-start;
+				scrollbar-width: thin;
+				scrollbar-color: var(--border) transparent;
+			}
+			.column {
+				width: 300px;
+				min-width: 300px;
+				flex-basis: 300px;
+				padding: 15px;
+				border: 1px solid var(--border);
+				border-radius: 14px;
+				background: var(--column-bg);
+				box-shadow: 0 3px 12px rgba(27, 39, 67, .045);
+				transform: none;
+			}
+			.column:hover { transform: none; box-shadow: 0 7px 20px rgba(27,39,67,.08); }
+			.column-header { gap: 9px; margin-bottom: 14px; padding-bottom: 12px; border-color: var(--border); }
+			.column h3 { color: var(--text); font-size: .91rem; font-weight: 650; letter-spacing: -.01em; }
+			.column-content { flex: 0 0 auto; }
+			.drag-handle { margin: 0; padding: 5px; border-radius: 6px; }
+			.drag-handle:hover { background: var(--done-bg); color: var(--primary); }
+			.task {
+				min-height: 54px;
+				margin-bottom: 10px;
+				padding: 13px 11px;
+				gap: 8px;
+				border-radius: 10px;
+				box-shadow: 0 2px 5px rgba(25,35,55,.045);
+				font-size: .86rem;
+			}
+			.task:hover { transform: translateY(-2px); box-shadow: 0 7px 16px rgba(25,35,55,.09); }
+			.task-text { margin-right: 0; line-height: 1.4; }
+			.task.done { opacity: .7; }
+			.remove-btn { flex: 0 0 24px; width: 24px; height: 24px; margin: 0; font-size: 17px; line-height: 1; opacity: .45; }
+			.task:hover .remove-btn, .column-header:hover .remove-btn { opacity: 1; }
+			.column-header .remove-btn { opacity: .45; }
+			.modal-backdrop { background: rgba(12, 17, 30, .54); backdrop-filter: blur(4px); }
+			.modal {
+				width: min(650px, calc(100vw - 32px));
+				padding: 24px;
+				border: 1px solid var(--border);
+				border-radius: 16px;
+				box-shadow: 0 24px 70px rgba(0,0,0,.22);
+				gap: 14px;
+			}
+			.modal-header { font-size: 1.25rem; letter-spacing: -.025em; }
+			.modal input, .modal select, .modal textarea {
+				box-sizing: border-box;
+				padding: 11px 12px;
+				border-radius: 9px;
+				font: inherit;
+			}
+			.find-panel { top: 18px; right: 20px; padding: 8px; border-radius: 11px; }
+			.find-panel input { border-radius: 7px; }
+			.tooltip { border-radius: 10px; }
+			@media (max-width: 600px) {
+				#board-title { padding: 20px 16px 13px; font-size: 1.4rem; }
+				.controls { padding: 0 16px 16px; gap: 7px; }
+				.controls button { padding: 8px 10px; }
+				.board { padding: 16px; gap: 12px; }
+				.column { width: 280px; min-width: 280px; flex-basis: 280px; }
+			}
 		</style>
 	</head>
 	<body>

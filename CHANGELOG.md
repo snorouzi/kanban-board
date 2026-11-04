@@ -17,6 +17,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 - Repository URL corrected to `github.com/snorouzi/kanban-board`.
 - Updated README with new banner image.
+- Refreshed the board UI with updated colors, spacing, task cards, controls, and dialogs for light and dark themes.
+- Columns now grow with their task lists instead of clipping or allowing tasks to overflow their boundaries.
 
 ---
 
