@@ -1,10 +1,10 @@
 {
 	"name": "kanban-board",
-	"displayName": "kanban-board",
+	"displayName": "Kanban Board",
 	"description": "Simple Kanban board for Markdown tasks",
 	"icon": "images/icon.png",
 	"version": "0.4.1",
-	"publisher": "Saeed Norouzi",
+	"publisher": "SaeedNorouzi",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/snorouzi/kanban-board.git"
